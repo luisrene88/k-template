@@ -1,0 +1,236 @@
+/*Register my own font */
+@font-face{
+    font-family: 'Spelling-Night';
+    src: url(../fonts/SpellingNight.ttf);
+}
+@font-face{
+    font-family:'Sans-Thin';
+    src: url(../fonts/UniSansThin.otf);
+}
+@font-face{
+    font-family: 'Campton-Bold';
+    src: url(../fonts/CamptonBold.otf);
+}
+body{
+    height: 100%
+}
+/*nav section*/
+.brand{
+    display: flex;
+    justify-content: flex-end;
+    color: #18c18b;
+    font-family:Spelling-Night;
+}
+nav{
+    background-color: black;
+    padding-top:10px;
+    padding-bottom: 10px;
+    /*border-radius: 2px 2px 5px 5px;*/
+
+}
+nav a{
+    color: #444;
+}
+.current{
+    background-color: #18c18b;
+    color: white;
+    border-radius: 25px 25px 25px 25px;
+}
+nav .current>a{
+    background-color: #18c18b;
+    color: white;
+    border-radius: 25px 25px 25px 25px;   
+
+}
+
+nav>.current>a, nav>.current>a:hover, nav >.current>a:focus {
+    color: white;
+    background-color: #18c18b;
+}
+
+.show-menu{
+    /*background-color: #18c18b;
+    color: white;
+    text-align: center;*/
+    padding: 10px 0;
+    display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+.ed-menu li>a:hover{
+    color: white;
+}
+
+#indexTitulo{
+
+    width: 100%;
+    font-size: 7em;
+    font-family:Spelling-Night; 
+    color:#18c18b;
+    
+}
+
+.rota-texto{
+    margin-top: -40px;
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-10deg);
+}
+
+/*contact section*/
+
+.form-contact{
+    border: 1px solid black;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+    box-shadow: -1px -1px 25px 5px black;
+}
+
+.form-contact li{
+    list-style: none;
+    
+}
+
+.form-contact label{
+    display: block;
+    padding-bottom: .5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #444;
+}
+
+.form-contact input, textarea{
+    
+    font-size: 14px;
+    border-radius: 1px;
+    width: 350px;
+    line-height: 25px;
+    margin-bottom: 1em;
+    
+
+}
+.form-contact textarea:focus, input:focus{
+    outline: #18c18b solid medium;
+    
+}
+.button.radius{
+    background-color: #18c18b;
+    color: white;
+    border-color: #18c18b; 
+}
+.button.radius:hover{
+    box-shadow: -1px -1px 15px 5px black;
+    background-color: #18c18b;
+}
+
+
+.icon-facebook{
+    color: #18c18b;
+    font-size: 2em;
+    margin: 15px;
+}
+.icon-twitter{
+    color: #18c18b;
+    font-size: 2em;
+    margin: 15px;
+}
+.icon-instagram{
+    color: #18c18b;
+    font-size: 2em;
+    margin: 15px;
+    
+}
+/*blog section*/
+.blog-container{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    bottom: 0;
+    box-shadow: -1px -1px 15px 5px black;
+}
+.blog-content{
+    /*border-bottom: 1px solid #18c18b;
+    box-shadow: 0px 4px 4px -2px #18c18b;*/
+    padding-top: 15px;
+    
+
+}
+.blog-content.down{
+    box-shadow: 0px 4px 4px -2px black;/*#18c18b;*/
+}
+p{
+    z-index: -1;
+}
+.ed-item.blog-content>p{
+    box-shadow: inset 0px -10px 21px -11px grey;
+    max-height: 250px;
+    overflow: hidden;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.blog-title{
+    font-family: Sans-Thin;
+    color: #18c18b;
+    font-weight: bold;
+}
+
+/*mobile section*/
+@media screen and (max-width: 480px ){
+    ul.ed-menu{
+        position: static;
+        display: none
+    }
+    .show-menu{
+        display: inline-flex;
+        align-items: right;
+    }
+    .icon-menu{
+        color: #18c18b;
+        font-size: 2em;
+    }
+    #indexTitulo{
+        font-size: 3em;
+
+    }
+    .rota-texto{
+    margin-top: 0px;
+    transform: rotate(-4deg);
+    }
+    .blog-container{
+        border: none;
+    }
+    .form-contact{
+        border: none;
+        box-shadow: none;
+    }
+}
+
+.fixed-bg {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+
+    background-image: url("/static/img/img-back.jpg");
+     /* Set a specified height, or the minimum height for the background image */
+    min-height: 500px;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+    
+}
+
+
