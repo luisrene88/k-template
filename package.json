@@ -1,0 +1,25 @@
+{
+  "name": "k-template",
+  "version": "1.0.0",
+  "description": "a simple template for inspiration designers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisrene88/k-template.git"
+  },
+  "keywords": [
+    "template",
+    "black",
+    "ed-grid"
+  ],
+  "author": "Luis R. Velazquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisrene88/k-template/issues"
+  },
+  "homepage": "https://github.com/luisrene88/k-template#readme"
+}
